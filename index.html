@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="main-page-section">
+        <header>
+            <div class="brand">
+                <i class='bx bx-circle-three-quarter brand-logo'></i> <!-- ! brand logo is my custom classs -->
+                <h1>Brand</h1>
+            </div>
+            <i class='bx bx-menu brand-logo humburger-menu-icon' onclick="showMenu()"></i>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <nav class="responsove-nav">
+                <ul>
+                    <li><a href="#"><i class='bx bx-chevron-up ' onclick="hideMenu()" style="font-size: 1.1rem;"></i></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div class="contact-btn for-mob">
+                    <button>Contact Us</button>
+                </div>
+            </nav>
+            <div class="contact-btn">
+                <button>Contact Us</button>
+            </div>
+        </header>
+        <div class="home-section">
+            <div class="home-text">
+                <h1 class="primary-heading">Build Your</h1>
+                <h1 class="primary-heading">Awesome</h1>
+                <h1 class="primary-heading">Plateform</h1>
+                <p class="primary-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum vitae sequi adipisci nostrum aut fugit omnis accusamus
+                    mollitia corrupti minus dignissimos placeat, nesciunt odio dolorum!
+                </p>
+                <button>Our Services <i class='bx bx-right-arrow-alt'></i></button>
+                <i class="fa-solid fa-arrow-down-left"></i>
+            </div>
+            <div class="home-img">
+                <div>
+                    <div>
+                        <img src="./assets/model.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us">
+            <div class="about-text">
+                <div>
+                    <h1 class="primary-heading">Why Our Brand is</h1>
+                    <h1 class="primary-heading">Best Choice?</h1>
+                </div>
+                <p class="primary-text">Watch this one video so you can understant why you should use our services</p>
+            </div>
+            <div class="about-media">
+                <iframe width="1092" height="500" src="https://www.youtube.com/embed/FzcfZyEhOoI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="servicrs-section">
+            <div class="services-heading">
+                <h1 class="primary-heading">The Services We Provide</h1>
+                <h1 class="primary-heading">For You</h1>
+            </div>
+            <div class="services-grid">
+                <div class="services-item">
+                    <div><i class='bx bx-code-alt'></i></div>
+                    <h1>Development</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="services-item">
+                    <div style="background-color: brown;"><i style="color: #680101;" class='bx bx-data'></i></div>
+                    <h1>Ui/Ux Designe</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+                <div class="services-item">
+                    <div style="background-color: yellow;"><i style="color: black;" class='bx bx-code-alt'></i></div>
+                    <h1>Graphic Design</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+                <div class="services-item">
+                    <div style="background-color: yellow;"><i style="color: black;" class='bx bx-data'></i></div>
+                    <h1>Motion Graphic</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+                <div class="services-item">
+                    <div><i class='bx bx-camera'></i></div>
+                    <h1>Photography</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+                <div class="services-item">
+                    <div style="background-color: brown;"><i style="color: #680101;" class='bx bx-camera-movie'></i>
+                    </div>
+                    <h1>Videography</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="our-projects">
+            <div class="our-projects-heading">
+                <h1 class="primary-heading">Our Awesome Portfolio</h1>
+            </div>
+            <div class="slide-show">
+                <div class="slides">
+                    <div class="sides-img1">
+                        <div><img src="./assets/1.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img2">
+                        <div><img src="./assets/2.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img3">
+                        <div><img src="./assets/3.jpg" alt="photo"></div>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="sides-img1">
+                        <div><img src="./assets/4.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img2">
+                        <div><img src="./assets/5.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img3">
+                        <div><img src="./assets/6.jpg" alt="photo"></div>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="sides-img1">
+                        <div><img src="./assets/5.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img2">
+                        <div><img src="./assets/1.jpg" alt="photo"></div>
+                    </div>
+                    <div class="sides-img3">
+                        <div><img src="./assets/3.jpg" alt="photo"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span onclick="btn_slide_show(1)" class="btn-slider"></span>
+                <span onclick="btn_slide_show(2)" class="btn-slider"></span>
+                <span onclick="btn_slide_show(3)" class="btn-slider"></span>
+            </div>
+        </div>
+
+        <div class="contact-us">
+            <div class="contact-heading">
+                <h1 class="primary-heading">Contact us for the service you <br> want to use</h1>
+            </div>
+            <button>Contact Us</button>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
+            <path fill="#5454d4" fill-opacity="1"
+                d="M0,96L24,101.3C48,107,96,117,144,149.3C192,181,240,235,288,224C336,213,384,139,432,122.7C480,107,528,149,576,176C624,203,672,213,720,202.7C768,192,816,160,864,160C912,160,960,192,1008,186.7C1056,181,1104,139,1152,122.7C1200,107,1248,117,1296,149.3C1344,181,1392,235,1416,261.3L1440,288L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+            </path>
+        </svg>
+        <div class="footer">
+            <div class="footer-heading">
+                <div class="brand">
+                    <i class='bx bx-circle-three-quarter brand-logo'></i> <!-- ! brand logo is my custom classs -->
+                    <h1>Brand</h1>
+                </div>
+            </div>
+            <div class="footer-text">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+                <div>
+                    <p style="color: black; font-weight: bolder;">&copy2022 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

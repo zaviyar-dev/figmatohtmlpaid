@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #211b20;
+    overflow-x: hidden;
+}
+svg{
+    position: relative;
+    top: 0.5rem;
+}
+.brand-logo{
+    font-weight: 900;
+    display: inline-block;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+.main-page-section{
+    width: 100vw;
+    background: rgb(33,27,32);
+    background: linear-gradient(90deg,rgba(48,48,86,1)  0%,rgba(33,27,32,1)  50%, rgba(54,43,36,1) 100%);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vw;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+nav li {
+    list-style: none;
+    padding: 0 1.5vw;
+}
+nav a {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+nav a:hover {
+    color: #5454d4;
+}
+.responsove-nav{
+    display: none;
+}
+.humburger-menu-icon{
+    display: none;
+}
+
+.contact-btn button{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 1vw 3vw;
+    border-radius: 0.2vw;
+}
+.contact-btn button:hover{
+    background-color: #5454d4;
+}
+.contact-btn button:active{
+    background-color: #5454d4;
+}
+.contact-btn button:focus{
+    background-color: #5454d4;
+}
+.home-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.home-text{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.primary-heading{
+    font-size: 3.2rem;
+    font-family: system-ui;
+    font-weight: 900;
+    color: white;
+}
+.primary-text {
+    width: 33vw;
+    line-height: 1.6vw;
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8rem;
+    margin: 0.5vw 0 1.4vw 0;
+}
+.home-text button{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+    background: #5454d4;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1vw 3vw;
+    border-radius: 0.3vw;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, 
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px, 
+    rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+.home-text button > i{
+    font-size: 1.5rem;
+    transform: rotate(-45deg);
+}
+.home-text button:hover{
+    box-shadow: none;
+    color: black;
+    background-color: white;
+}
+.home-img{
+    margin-top: 6vw;
+}
+.home-img div{
+    height: 25vw;
+    width: 25vw;
+    border: 2px solid white;
+    transform: rotate(30deg);
+    border-radius: 1vw;
+    background-color: transparent;
+}
+.home-img div > div{
+    transform: rotate(0);
+    position: relative;
+    top: 2vw;
+    right: -2vw;
+    background-color: #5454d4;
+    overflow: hidden;
+}
+.home-img div > div > img{
+    position: relative;
+    top: -11vw;
+    transform: rotate(
+334deg);
+    left: -6vw;
+    top: -11vw;
+    width: 34vw;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9vw;
+    align-items: center;
+    justify-content: center;
+}
+.about-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.about-text > p{
+    display: flex;
+    align-items: center;
+}
+.about-text > div{
+    display: flex;
+    flex-direction: column;
+}
+.about-media > iframe{
+    margin-top: 1vw;
+    height: 35vw;
+    width: 80vw;
+}
+
+.servicrs-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    justify-items: center;
+    align-items: center;
+}
+.services-heading{
+    text-align: center;
+}
+.services-grid{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(3,auto);
+    grid-row-gap: 2vw;
+    grid-column-gap: 7vw;
+}
+
+.services-item{
+    height: 20vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-item > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.3;
+}
+.services-item > div > i{
+    font-size: 2rem;
+    color: #5353ec;
+}
+.services-item > h1{
+    color: white;
+    font-family: monospace;
+    margin: 1vw 0;
+}
+.services-item > p{
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3vw;
+}
+
+.our-projects{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-projects-heading{
+    display: flex;
+    width: 90vw;
+}
+.slide-show{
+    margin-top: 1rem;
+    overflow: hidden;
+    width: 90vw;
+    height: 35vw;
+}
+.slides{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.slides:nth-child(2){
+    flex-direction: row-reverse;
+}
+.slides:nth-child(3) .sides-img3{
+    align-items: flex-start;
+}
+.slides:nth-child(3) .sides-img2{
+    align-items: flex-end;
+}
+.slides > div {
+    display: flex;
+}
+.sides-img1{
+    display: flex;
+}
+.sides-img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sides-img3{
+    display: flex;
+    align-items: flex-end;
+}
+.slides > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+    width: 28vw;
+    background-color: #201a1e;
+    border-radius: 0.4vw;
+    overflow: hidden;
+}
+.slides img{
+    height: 92%;
+    width: 93%;
+    border-radius: 0.5vw;
+}
+.our-projects > div:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 5rem;
+}
+.btn-slider:nth-child(1){
+    background-color: #5454d4;
+}
+.btn-slider{
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 5vw;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+
+.contact-us{
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-us button{
+    background-color: #5454d4;
+    border: none;
+    padding: 1vw 3vw;
+    font-family: 'Libre Franklin', sans-serif;
+    border-radius: 0.2vw;
+    color: white;
+    font-weight: 800;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, 
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px, 
+    rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+.contact-us button:hover{
+    box-shadow: none;
+    background-color: #fff;
+    color: black;
+    font-weight: 1000;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vw;
+    background-color: #5454d4;
+}
+.footer-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-heading > h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 39rem; */
+}
+.footer-text > ul{
+    display: flex;
+}
+.footer-text > ul > li{
+    list-style: none;
+    padding: 0 1vw;
+}
+.footer-text > ul a{
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+}
+.footer-text > ul a:hover{
+    color: #000;
+}
+.footer-text p{
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+}
